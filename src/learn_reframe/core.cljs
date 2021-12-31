@@ -6,6 +6,7 @@
    [re-frame.core :as rf]
    [re-frame.db :as db]))
 
+
 ;; let's make a initialization event
 (rf/reg-event-db
  :initialize
@@ -65,8 +66,7 @@
 (defn ui []
   [:div.columns.is-centered>div.column.is-two-thirds
    [:p>h2 "The time is:"]
-   [:div.columns>div.column
-    [clock]
+   [:div.columns>div.column    [clock]
     [:br]
     [color-input]]])
 
