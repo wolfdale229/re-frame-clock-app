@@ -1,0 +1,7 @@
+^{:watch-dirs ["test" "src"]
+  :css-dirs ["resources/public/css"]
+  :auto-testing true
+   }
+{:main learn-reframe.core
+ :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}
+ :preloads  [day8.re-frame-10x.preload]}
